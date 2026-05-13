@@ -5,7 +5,7 @@
 <h1 align="center">i-have-adhd</h1>
 
 <p align="center">
-  <strong>Claude Code, but it stops burying the answer.</strong>
+  <strong>Claude Code, but it stops burying the answer. No ADHD diagnosis needed.</strong>
 </p>
 
 <p align="center">

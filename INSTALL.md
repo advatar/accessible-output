@@ -61,7 +61,7 @@ Use this if you want the rules in every Claude Code session, everywhere.
 **One-liner:**
 
 ```bash
-./install-user.sh
+bash install-user.sh
 ```
 
 Run from the repo root. Copies the skill to `~/.claude/skills/i-have-adhd/SKILL.md` and the slash command to `~/.claude/commands/i-have-adhd.md`. Honors `$CLAUDE_CONFIG_DIR` if set. Re-running is safe (overwrites).
