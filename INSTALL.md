@@ -5,7 +5,7 @@ A Claude Code and Codex plugin. One skill inside.
 ## Claude Code
 
 ```bash
-claude plugin marketplace add advatar/i-have-adhd
+claude plugin marketplace add ayghri/i-have-adhd
 claude plugin install i-have-adhd@i-have-adhd
 ```
 
@@ -24,7 +24,7 @@ Look for `i-have-adhd  (enabled)`.
 ## Codex
 
 ```bash
-codex plugin marketplace add advatar/i-have-adhd
+codex plugin marketplace add ayghri/i-have-adhd
 codex plugin add i-have-adhd@i-have-adhd
 ```
 
@@ -68,7 +68,7 @@ Always follow the rules in the `i-have-adhd` skill: action-first, numbered steps
 
 **The skill is missing from autocomplete.** Restart Claude Code or Codex. Plugin and skill changes are picked up in a new session.
 
-**Marketplace installation fails.** Use `advatar/i-have-adhd` exactly. For local development, point either CLI at the cloned repo root, not `.claude-plugin/`.
+**Marketplace installation fails.** Use `ayghri/i-have-adhd` exactly. For local development, point either CLI at the cloned repo root, not `.claude-plugin/`.
 
 **Skill activates but model still preambles.** Open a new session. Old context may carry. If it still drifts, tighten the rule wording in `skills/i-have-adhd/SKILL.md`, then re-invoke.
 
