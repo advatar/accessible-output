@@ -113,6 +113,8 @@ User prompt: “This is important, so please deal with it ASAP. It shouldn’t t
 8. Matter-of-fact errors.
 9. Cap lists at 5 items.
 10. No preamble. No recap. No closers.
+11. Make choices and tradeoffs explicit.
+12. Keep optional detail discoverable under a clear label.
 
 ## Tune it
 
