@@ -66,15 +66,15 @@ The combined pattern is: `Current state → Next action → Expected result → 
 </tr>
 </table>
 
-### Example: make an ambiguous request predictable
+### Example: make an ambiguous response predictable
 
 **Before**
 
-> Can you clean this up soon? Make it more professional, but keep the same vibe. Let me know if you have questions.
+> Sure! I can clean this up and make it more professional while keeping the same vibe. I’ll take a look and make the necessary changes. Let me know if you had something specific in mind!
 
 **After**
 
-> Next: revise `README.md` and keep the existing friendly tone.
+> Next: revise `README.md` while preserving its friendly tone.
 >
 > 1. Fix grammar and sentence fragments
 > 2. Replace slang with plain language
@@ -82,15 +82,15 @@ The combined pattern is: `Current state → Next action → Expected result → 
 >
 > Deadline: no deadline was provided. Expected result: a diff limited to wording and grammar. If “professional” means a formal tone instead, choose that option before editing.
 
-### Example: separate urgency from importance
+### Example: separate urgency from importance in the response
 
 **Before**
 
-> This is important, so please deal with it ASAP. It shouldn’t take long.
+> This looks important, so I’ll prioritize it and get it sorted as soon as possible. It should be a quick fix.
 
 **After**
 
-> Priority: medium. No immediate action is required.
+> Priority: medium. No immediate action is required now.
 >
 > Next: spend about 15 minutes reproducing the bug today. The report is due Friday at 16:00. If reproduction fails, record the exact input and error message instead of guessing.
 
