@@ -4,11 +4,6 @@
 <p align="center">
   <strong align="center">Action-first, explicit outputs for ADHD and autistic readers</strong>
 </p>
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/advatar/accessible-output?style=flat" alt="License"></a>
-</p>
-
-
 ## Install
 
 Claude Code:
