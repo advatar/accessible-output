@@ -20,7 +20,7 @@ codex plugin marketplace add advatar/accessible-output
 codex plugin add accessible-output@accessible-output
 ```
 
-Invoke it with `/accessible-output` in Claude Code or `$accessible-output` in Codex.
+Invoke it with `/accessible-output` in Claude Code or `$accessible-output` in Codex. Add a mode when needed: `/accessible-output adhd`, `/accessible-output autistic`, or `/accessible-output both`.
 
 To disable in Claude Code: `claude plugin disable accessible-output` or use `/plugin disable accessible-output`.
 
@@ -66,15 +66,17 @@ The combined pattern is: `Current state → Next action → Expected result → 
 </tr>
 </table>
 
-### Example: make an ambiguous request predictable
+### Example: make an ambiguous model response predictable
 
-**Before**
+User prompt: “Can you clean this up soon? Make it more professional, but keep the same vibe.”
 
-> Can you clean this up soon? Make it more professional, but keep the same vibe. Let me know if you have questions.
+**Model response before accessible-output**
 
-**After**
+> Sure! I can clean this up and make it more professional while keeping the same vibe. I’ll take a look and make the necessary changes. Let me know if you had something specific in mind!
 
-> Next: revise `README.md` and keep the existing friendly tone.
+**Model response with accessible-output**
+
+> Next: revise `README.md` while preserving its friendly tone.
 >
 > 1. Fix grammar and sentence fragments
 > 2. Replace slang with plain language
@@ -82,15 +84,17 @@ The combined pattern is: `Current state → Next action → Expected result → 
 >
 > Deadline: no deadline was provided. Expected result: a diff limited to wording and grammar. If “professional” means a formal tone instead, choose that option before editing.
 
-### Example: separate urgency from importance
+### Example: separate urgency from importance in a model response
 
-**Before**
+User prompt: “This is important, so please deal with it ASAP. It shouldn’t take long.”
 
-> This is important, so please deal with it ASAP. It shouldn’t take long.
+**Model response before accessible-output**
 
-**After**
+> This looks important, so I’ll prioritize it and get it sorted as soon as possible. It should be a quick fix.
 
-> Priority: medium. No immediate action is required.
+**Model response with accessible-output**
+
+> Priority: medium. No immediate action is required now.
 >
 > Next: spend about 15 minutes reproducing the bug today. The report is due Friday at 16:00. If reproduction fails, record the exact input and error message instead of guessing.
 
@@ -113,6 +117,16 @@ The combined pattern is: `Current state → Next action → Expected result → 
 ## Tune it
 
 Edit `skills/accessible-output/SKILL.md`. Re-invoke `/accessible-output` in Claude Code or `$accessible-output` in Codex.
+
+### Modes
+
+The default mode is `both`. Select one explicitly when the response should target a single set of needs:
+
+- `adhd`: reduce working-memory load and starting friction.
+- `autistic`: reduce ambiguity and make structure, assumptions, and timing explicit.
+- `both`: combine both accommodations.
+
+Examples: `/accessible-output adhd` or `$accessible-output autistic`.
 
 ## Credits
 
