@@ -9,7 +9,7 @@ claude plugin marketplace add advatar/accessible-output
 claude plugin install accessible-output@accessible-output
 ```
 
-Open Claude Code, type `/accessible-output`.
+Open Claude Code, type `/accessible-output`. Add `adhd`, `autistic`, or `both` to select a mode.
 
 To disable: `claude plugin disable accessible-output` (or `/plugin disable accessible-output` from within Claude Code). Re-enable later with `enable` instead of `disable`.
 
@@ -28,7 +28,7 @@ codex plugin marketplace add advatar/accessible-output
 codex plugin add accessible-output@accessible-output
 ```
 
-Start a new Codex thread and invoke `$accessible-output`. Codex may also activate the skill automatically because it applies to every response.
+Start a new Codex thread and invoke `$accessible-output`. Add `adhd`, `autistic`, or `both` to select a mode. Codex may also activate the skill automatically because it applies to every response.
 
 Verify with:
 

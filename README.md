@@ -20,7 +20,7 @@ codex plugin marketplace add advatar/accessible-output
 codex plugin add accessible-output@accessible-output
 ```
 
-Invoke it with `/accessible-output` in Claude Code or `$accessible-output` in Codex.
+Invoke it with `/accessible-output` in Claude Code or `$accessible-output` in Codex. Add a mode when needed: `/accessible-output adhd`, `/accessible-output autistic`, or `/accessible-output both`.
 
 To disable in Claude Code: `claude plugin disable accessible-output` or use `/plugin disable accessible-output`.
 
@@ -66,13 +66,15 @@ The combined pattern is: `Current state → Next action → Expected result → 
 </tr>
 </table>
 
-### Example: make an ambiguous response predictable
+### Example: make an ambiguous model response predictable
 
-**Before**
+User prompt: “Can you clean this up soon? Make it more professional, but keep the same vibe.”
+
+**Model response before accessible-output**
 
 > Sure! I can clean this up and make it more professional while keeping the same vibe. I’ll take a look and make the necessary changes. Let me know if you had something specific in mind!
 
-**After**
+**Model response with accessible-output**
 
 > Next: revise `README.md` while preserving its friendly tone.
 >
@@ -82,13 +84,15 @@ The combined pattern is: `Current state → Next action → Expected result → 
 >
 > Deadline: no deadline was provided. Expected result: a diff limited to wording and grammar. If “professional” means a formal tone instead, choose that option before editing.
 
-### Example: separate urgency from importance in the response
+### Example: separate urgency from importance in a model response
 
-**Before**
+User prompt: “This is important, so please deal with it ASAP. It shouldn’t take long.”
+
+**Model response before accessible-output**
 
 > This looks important, so I’ll prioritize it and get it sorted as soon as possible. It should be a quick fix.
 
-**After**
+**Model response with accessible-output**
 
 > Priority: medium. No immediate action is required now.
 >
@@ -113,6 +117,16 @@ The combined pattern is: `Current state → Next action → Expected result → 
 ## Tune it
 
 Edit `skills/accessible-output/SKILL.md`. Re-invoke `/accessible-output` in Claude Code or `$accessible-output` in Codex.
+
+### Modes
+
+The default mode is `both`. Select one explicitly when the response should target a single set of needs:
+
+- `adhd`: reduce working-memory load and starting friction.
+- `autistic`: reduce ambiguity and make structure, assumptions, and timing explicit.
+- `both`: combine both accommodations.
+
+Examples: `/accessible-output adhd` or `$accessible-output autistic`.
 
 ## Credits
 

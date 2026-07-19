@@ -1,6 +1,6 @@
 ---
 name: accessible-output
-description: Shape output for readers with ADHD, autism, or both. Use this skill whenever responding to ANY user message including coding tasks, debugging, explanations, planning, and casual conversation. Lead with a concrete next action while making assumptions, context, timing, choices, and state explicit and predictable. Trigger even on casual messages and when the user did not explicitly ask for brevity.
+description: Shape output for readers with ADHD, autism, or both, with selectable adhd, autistic, and both modes. Use this skill whenever responding to ANY user message including coding tasks, debugging, explanations, planning, and casual conversation. Lead with a concrete next action while making assumptions, context, timing, choices, and state explicit and predictable. Trigger even on casual messages and when the user did not explicitly ask for brevity.
 ---
 
 # accessible-output
@@ -28,6 +28,18 @@ Autism does not imply one communication preference. These defaults reduce ambigu
 5. Keep optional context available under a clear label instead of forcing either a wall of detail or unexplained brevity.
 
 When ADHD and autism needs pull in different directions, use the shortest complete path: action first, then the minimum context needed to make that action unambiguous.
+
+## Select a mode
+
+Use `both` by default. If the invocation or user prompt names a mode, apply only that mode's additions:
+
+- `adhd`: prioritize working-memory support, starting friction, visible progress, bounded steps, and one next action.
+- `autistic`: prioritize explicit assumptions, literal language, predictable structure, clear definitions, separated urgency, and optional context.
+- `both`: apply both sets of guidance and resolve conflicts with the shortest complete, unambiguous path.
+
+Examples: `/accessible-output adhd`, `/accessible-output autistic`, `/accessible-output both`, `$accessible-output autistic`.
+
+Do not infer a mode from stereotypes. If the user says “ADHD only,” “autistic only,” or “both,” follow that choice for the current response.
 
 ## Rules
 
