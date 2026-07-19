@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="./logo.png" alt="i-have-adhd" width="140" />
+  <img src="./logo.png" alt="accessible-output" width="140" />
 </p>
 <p align="center">
-  <strong align="center">ADHD-friendly outputs. No ADHD diagnosis needed!</strong>
+  <strong align="center">Action-first, explicit outputs for ADHD and autistic readers</strong>
 </p>
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/advatar/i-have-adhd?style=flat" alt="License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/advatar/accessible-output?style=flat" alt="License"></a>
 </p>
 
 
@@ -14,26 +14,26 @@
 Claude Code:
 
 ```bash
-claude plugin marketplace add advatar/i-have-adhd
-claude plugin install i-have-adhd@i-have-adhd
+claude plugin marketplace add advatar/accessible-output
+claude plugin install accessible-output@accessible-output
 ```
 
 Codex:
 
 ```bash
-codex plugin marketplace add advatar/i-have-adhd
-codex plugin add i-have-adhd@i-have-adhd
+codex plugin marketplace add advatar/accessible-output
+codex plugin add accessible-output@accessible-output
 ```
 
-Invoke it with `/i-have-adhd` in Claude Code or `$i-have-adhd` in Codex.
+Invoke it with `/accessible-output` in Claude Code or `$accessible-output` in Codex.
 
-To disable in Claude Code: `claude plugin disable i-have-adhd` or use `/plugin disable i-have-adhd`.
+To disable in Claude Code: `claude plugin disable accessible-output` or use `/plugin disable accessible-output`.
 
 More in [INSTALL.md](./INSTALL.md).
 
 ## What it does
 
-A Claude Code and Codex skill that stops burying the answer. Action first. Steps numbered. No "Hope this helps!"
+A Claude Code and Codex skill that stops burying the answer. Action first, explicit, and predictable. No "Hope this helps!"
 
 
 ## What changes
@@ -68,7 +68,7 @@ A Claude Code and Codex skill that stops burying the answer. Action first. Steps
 
 ## The rules
 
-10 rules. Full text in [SKILL.md](./skills/i-have-adhd/SKILL.md).
+12 rules. Full text in [SKILL.md](./skills/accessible-output/SKILL.md).
 
 1. Lead with the next action.
 2. Number multi-step tasks.
@@ -83,7 +83,7 @@ A Claude Code and Codex skill that stops burying the answer. Action first. Steps
 
 ## Tune it
 
-Edit `skills/i-have-adhd/SKILL.md`. Re-invoke `/i-have-adhd` in Claude Code or `$i-have-adhd` in Codex.
+Edit `skills/accessible-output/SKILL.md`. Re-invoke `/accessible-output` in Claude Code or `$accessible-output` in Codex.
 
 ## Credits
 
