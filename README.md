@@ -11,21 +11,29 @@
 
 ## Install
 
+Claude Code:
+
 ```bash
-git clone https://github.com/ayghri/i-have-adhd ./i-have-adhd
-claude plugin marketplace add ./i-have-adhd
+claude plugin marketplace add ayghri/i-have-adhd
 claude plugin install i-have-adhd@i-have-adhd
 ```
 
-In Claude Code: `/i-have-adhd`.
+Codex:
 
-To disable: `claude plugin disable i-have-adhd` or use `/plugin disable i-have-adhd` from within CC.
+```bash
+codex plugin marketplace add ayghri/i-have-adhd
+codex plugin add i-have-adhd@i-have-adhd
+```
+
+Invoke it with `/i-have-adhd` in Claude Code or `$i-have-adhd` in Codex.
+
+To disable in Claude Code: `claude plugin disable i-have-adhd` or use `/plugin disable i-have-adhd`.
 
 More in [INSTALL.md](./INSTALL.md).
 
 ## What it does
 
-A Claude Code skill that stops burying the answer. Action first. Steps numbered. No "Hope this helps!"
+A Claude Code and Codex skill that stops burying the answer. Action first. Steps numbered. No "Hope this helps!"
 
 
 ## What changes
@@ -75,7 +83,7 @@ A Claude Code skill that stops burying the answer. Action first. Steps numbered.
 
 ## Tune it
 
-Edit `skills/i-have-adhd/SKILL.md`. Re-invoke `/i-have-adhd`.
+Edit `skills/i-have-adhd/SKILL.md`. Re-invoke `/i-have-adhd` in Claude Code or `$i-have-adhd` in Codex.
 
 ## Credits
 

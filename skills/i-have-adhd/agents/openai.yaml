@@ -1,0 +1,4 @@
+interface:
+  display_name: "i-have-adhd"
+  short_description: "Action-first, ADHD-friendly responses"
+  default_prompt: "Use $i-have-adhd to make every response action-first and easy to scan."
