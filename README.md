@@ -1,40 +1,39 @@
 <p align="center">
-  <img src="./logo.png" alt="accessible-output" width="140" />
+  <img src="./logo.png" alt="i-have-adhd" width="140" />
 </p>
 <p align="center">
-  <strong align="center">Action-first, explicit outputs for ADHD and autistic readers</strong>
+  <strong align="center">ADHD-friendly outputs. No ADHD diagnosis needed!</strong>
 </p>
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="License"></a>
+</p>
+
+
 ## Install
 
 Claude Code:
 
 ```bash
-claude plugin marketplace add advatar/accessible-output
-claude plugin install accessible-output@accessible-output
+claude plugin marketplace add ayghri/i-have-adhd
+claude plugin install i-have-adhd@i-have-adhd
 ```
 
 Codex:
 
 ```bash
-codex plugin marketplace add advatar/accessible-output
-codex plugin add accessible-output@accessible-output
+codex plugin marketplace add ayghri/i-have-adhd
+codex plugin add i-have-adhd@i-have-adhd
 ```
 
-Invoke it with `/accessible-output` in Claude Code or `$accessible-output` in Codex.
+Invoke it with `/i-have-adhd` in Claude Code or `$i-have-adhd` in Codex.
 
-To disable in Claude Code: `claude plugin disable accessible-output` or use `/plugin disable accessible-output`.
+To disable in Claude Code: `claude plugin disable i-have-adhd` or use `/plugin disable i-have-adhd`.
 
 More in [INSTALL.md](./INSTALL.md).
 
 ## What it does
 
-A Claude Code and Codex skill for readers with ADHD, autism, or both. It makes responses easier to act on without assuming that every neurodivergent reader communicates the same way.
-
-For ADHD, it reduces working-memory load: action first, bounded steps, visible progress, and one clear next move.
-
-For autistic readers, it reduces ambiguity: assumptions, definitions, deadlines, choices, and fallback paths are stated instead of implied. The answer stays literal and predictable without forcing a social script or burying the action under background.
-
-The combined pattern is: `Current state → Next action → Expected result → If blocked`.
+A Claude Code and Codex skill that stops burying the answer. Action first. Steps numbered. No "Hope this helps!"
 
 
 ## What changes
@@ -66,38 +65,10 @@ The combined pattern is: `Current state → Next action → Expected result → 
 </tr>
 </table>
 
-### Example: make an ambiguous response predictable
-
-**Before**
-
-> Sure! I can clean this up and make it more professional while keeping the same vibe. I’ll take a look and make the necessary changes. Let me know if you had something specific in mind!
-
-**After**
-
-> Next: revise `README.md` while preserving its friendly tone.
->
-> 1. Fix grammar and sentence fragments
-> 2. Replace slang with plain language
-> 3. Preserve headings, examples, and meaning
->
-> Deadline: no deadline was provided. Expected result: a diff limited to wording and grammar. If “professional” means a formal tone instead, choose that option before editing.
-
-### Example: separate urgency from importance in the response
-
-**Before**
-
-> This looks important, so I’ll prioritize it and get it sorted as soon as possible. It should be a quick fix.
-
-**After**
-
-> Priority: medium. No immediate action is required now.
->
-> Next: spend about 15 minutes reproducing the bug today. The report is due Friday at 16:00. If reproduction fails, record the exact input and error message instead of guessing.
-
 
 ## The rules
 
-12 rules. Full text in [SKILL.md](./skills/accessible-output/SKILL.md).
+10 rules. Full text in [SKILL.md](./skills/i-have-adhd/SKILL.md).
 
 1. Lead with the next action.
 2. Number multi-step tasks.
@@ -112,7 +83,7 @@ The combined pattern is: `Current state → Next action → Expected result → 
 
 ## Tune it
 
-Edit `skills/accessible-output/SKILL.md`. Re-invoke `/accessible-output` in Claude Code or `$accessible-output` in Codex.
+Edit `skills/i-have-adhd/SKILL.md`. Re-invoke `/i-have-adhd` in Claude Code or `$i-have-adhd` in Codex.
 
 ## Credits
 
