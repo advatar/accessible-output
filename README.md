@@ -5,7 +5,7 @@
   <strong align="center">ADHD-friendly outputs. No ADHD diagnosis needed!</strong>
 </p>
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/ayghri/i-have-adhd?style=flat" alt="License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/advatar/i-have-adhd?style=flat" alt="License"></a>
 </p>
 
 
@@ -14,14 +14,14 @@
 Claude Code:
 
 ```bash
-claude plugin marketplace add ayghri/i-have-adhd
+claude plugin marketplace add advatar/i-have-adhd
 claude plugin install i-have-adhd@i-have-adhd
 ```
 
 Codex:
 
 ```bash
-codex plugin marketplace add ayghri/i-have-adhd
+codex plugin marketplace add advatar/i-have-adhd
 codex plugin add i-have-adhd@i-have-adhd
 ```
 

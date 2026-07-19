@@ -4,10 +4,10 @@
   "description": "Shape Claude Code and Codex output for an ADHD reader: lead with the next action, number steps, suppress tangents, restate state, and make wins visible.",
   "author": {
     "name": "Ayoub G.",
-    "url": "https://github.com/ayghri"
+    "url": "https://github.com/advatar"
   },
-  "homepage": "https://github.com/ayghri/i-have-adhd",
-  "repository": "https://github.com/ayghri/i-have-adhd",
+  "homepage": "https://github.com/advatar/i-have-adhd",
+  "repository": "https://github.com/advatar/i-have-adhd",
   "license": "MIT",
   "keywords": ["adhd", "accessibility", "productivity", "output-style"],
   "skills": "./skills/",
@@ -18,7 +18,7 @@
     "developerName": "Ayoub G.",
     "category": "Productivity",
     "capabilities": ["Instructions"],
-    "websiteURL": "https://github.com/ayghri/i-have-adhd",
+    "websiteURL": "https://github.com/advatar/i-have-adhd",
     "defaultPrompt": [
       "Use i-have-adhd to make every response action-first and easy to scan."
     ]
