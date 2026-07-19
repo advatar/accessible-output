@@ -1,36 +1,40 @@
 <p align="center">
-  <img src="./logo.png" alt="i-have-adhd" width="140" />
+  <img src="./logo.png" alt="accessible-output" width="140" />
 </p>
 <p align="center">
-  <strong align="center">ADHD-friendly outputs. No ADHD diagnosis needed!</strong>
+  <strong align="center">Action-first, explicit outputs for ADHD and autistic readers</strong>
 </p>
-
-
 ## Install
 
 Claude Code:
 
 ```bash
-claude plugin marketplace add advatar/i-have-adhd
-claude plugin install i-have-adhd@i-have-adhd
+claude plugin marketplace add advatar/accessible-output
+claude plugin install accessible-output@accessible-output
 ```
 
 Codex:
 
 ```bash
-codex plugin marketplace add advatar/i-have-adhd
-codex plugin add i-have-adhd@i-have-adhd
+codex plugin marketplace add advatar/accessible-output
+codex plugin add accessible-output@accessible-output
 ```
 
-Invoke it with `/i-have-adhd` in Claude Code or `$i-have-adhd` in Codex.
+Invoke it with `/accessible-output` in Claude Code or `$accessible-output` in Codex.
 
-To disable in Claude Code: `claude plugin disable i-have-adhd` or use `/plugin disable i-have-adhd`.
+To disable in Claude Code: `claude plugin disable accessible-output` or use `/plugin disable accessible-output`.
 
 More in [INSTALL.md](./INSTALL.md).
 
 ## What it does
 
-A Claude Code and Codex skill that stops burying the answer. Action first. Steps numbered. No "Hope this helps!"
+A Claude Code and Codex skill for readers with ADHD, autism, or both. It makes responses easier to act on without assuming that every neurodivergent reader communicates the same way.
+
+For ADHD, it reduces working-memory load: action first, bounded steps, visible progress, and one clear next move.
+
+For autistic readers, it reduces ambiguity: assumptions, definitions, deadlines, choices, and fallback paths are stated instead of implied. The answer stays literal and predictable without forcing a social script or burying the action under background.
+
+The combined pattern is: `Current state → Next action → Expected result → If blocked`.
 
 
 ## What changes
@@ -62,10 +66,38 @@ A Claude Code and Codex skill that stops burying the answer. Action first. Steps
 </tr>
 </table>
 
+### Example: make an ambiguous request predictable
+
+**Before**
+
+> Can you clean this up soon? Make it more professional, but keep the same vibe. Let me know if you have questions.
+
+**After**
+
+> Next: revise `README.md` and keep the existing friendly tone.
+>
+> 1. Fix grammar and sentence fragments
+> 2. Replace slang with plain language
+> 3. Preserve headings, examples, and meaning
+>
+> Deadline: no deadline was provided. Expected result: a diff limited to wording and grammar. If “professional” means a formal tone instead, choose that option before editing.
+
+### Example: separate urgency from importance
+
+**Before**
+
+> This is important, so please deal with it ASAP. It shouldn’t take long.
+
+**After**
+
+> Priority: medium. No immediate action is required.
+>
+> Next: spend about 15 minutes reproducing the bug today. The report is due Friday at 16:00. If reproduction fails, record the exact input and error message instead of guessing.
+
 
 ## The rules
 
-10 rules. Full text in [SKILL.md](./skills/i-have-adhd/SKILL.md).
+12 rules. Full text in [SKILL.md](./skills/accessible-output/SKILL.md).
 
 1. Lead with the next action.
 2. Number multi-step tasks.
@@ -80,7 +112,7 @@ A Claude Code and Codex skill that stops burying the answer. Action first. Steps
 
 ## Tune it
 
-Edit `skills/i-have-adhd/SKILL.md`. Re-invoke `/i-have-adhd` in Claude Code or `$i-have-adhd` in Codex.
+Edit `skills/accessible-output/SKILL.md`. Re-invoke `/accessible-output` in Claude Code or `$accessible-output` in Codex.
 
 ## Credits
 

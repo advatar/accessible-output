@@ -1,0 +1,4 @@
+interface:
+  display_name: "accessible-output"
+  short_description: "Explicit, predictable, accessible responses"
+  default_prompt: "Use $accessible-output to make every response action-first, explicit, and predictable."
