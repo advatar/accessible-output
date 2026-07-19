@@ -1,26 +1,26 @@
 {
-  "name": "accessible-output",
+  "name": "i-have-adhd",
   "version": "0.1.0",
-  "description": "Shape Claude Code and Codex output for ADHD and autistic readers: lead with the next action, make context explicit, reduce ambiguity, and keep progress visible.",
+  "description": "Shape Claude Code and Codex output for an ADHD reader: lead with the next action, number steps, suppress tangents, restate state, and make wins visible.",
   "author": {
     "name": "Ayoub G.",
-    "url": "https://github.com/advatar"
+    "url": "https://github.com/ayghri"
   },
-  "homepage": "https://github.com/advatar/accessible-output",
-  "repository": "https://github.com/advatar/accessible-output",
+  "homepage": "https://github.com/ayghri/i-have-adhd",
+  "repository": "https://github.com/ayghri/i-have-adhd",
   "license": "MIT",
   "keywords": ["adhd", "accessibility", "productivity", "output-style"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "accessible-output",
-    "shortDescription": "Explicit, predictable, accessible responses",
-    "longDescription": "Make Claude Code and Codex responses easier to act on with direct answers, explicit assumptions, predictable structure, visible progress, and fewer tangents.",
+    "displayName": "i-have-adhd",
+    "shortDescription": "Action-first, ADHD-friendly responses",
+    "longDescription": "Make Claude Code and Codex responses easier to act on with direct answers, numbered steps, visible progress, and fewer tangents.",
     "developerName": "Ayoub G.",
     "category": "Productivity",
     "capabilities": ["Instructions"],
-    "websiteURL": "https://github.com/advatar/accessible-output",
+    "websiteURL": "https://github.com/ayghri/i-have-adhd",
     "defaultPrompt": [
-      "Use accessible-output to make every response action-first and easy to scan."
+      "Use i-have-adhd to make every response action-first and easy to scan."
     ]
   }
 }
